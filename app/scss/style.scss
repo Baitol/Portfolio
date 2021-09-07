@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #828282;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.git_fork {
+    width: 200px;
+    position: absolute;
+    z-index: 2000;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+.header {
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1;
+    .menu {
+        width: 90%;
+        max-width: 1440px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0 20px;
+        width: 90%;
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #000;
+    }
+}
+
+.start-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    .start-info__name {
+        font-size: 47px;
+        line-height: 59px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 50px;
+    }
+    .start-info__name:hover {
+        font-size: 400%;
+    }
+    .start-info__job {
+        max-width: 250px;
+        font-size: 28px;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+    .chg-lang {
+        writing-mode: tb-rl;
+        transform: rotate(180deg);
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.animation-font {
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.animation-font:hover {
+    font-size: 34px;
+}
+
+.start-img {
+    width: 90%;
+    height: 600px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 34px;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 107px;
+}
+
+.about {
+    padding: 0 10px;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    .about__text {
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        width: 400px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .tech {
+        margin: 0 auto;
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .tech-logo {
+            max-width: 70px;
+            max-height: 50px;
+            margin-right: 20px;
+        }
+    }
+    .TNTU-logo {
+        margin: 0 auto;
+        max-width: 200px;
+        max-height: 200px;
+        margin-bottom: 107px;
+    }
+    .TNTU-link {
+        align-self: center;
+    }
+}

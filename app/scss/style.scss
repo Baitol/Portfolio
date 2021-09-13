@@ -265,7 +265,7 @@ li {
         .social__img {
             max-width: 70px;
             max-height: 50px;
-            margin: 0 50px;
+            margin: 10px 50px;
             transition: 1s;
         }
         .social__img:hover {
@@ -274,7 +274,7 @@ li {
     }
 }
 
-@media (max-width: 845px) {
+@media (max-width: 897px) {
     .start-info {
         .start-info__job {
             margin-left: 200px;
@@ -338,6 +338,14 @@ li {
                     color: #828282;
                 }
             }
+        }
+    }
+    .contacts {
+        .social {
+            flex-direction: column;
+        }
+        .social__img {
+            margin: 10px 50px;
         }
     }
 }

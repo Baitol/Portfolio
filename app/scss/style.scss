@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+BODY.eng .ua,
+BODY.ua .eng {
+    display: none
+}
+
+button {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
 ::-webkit-scrollbar {
     width: 0;
 }
@@ -55,49 +66,46 @@ li {
         max-width: 1440px;
         display: flex;
         justify-content: space-between;
+        .chg-lang {
+            display: flex;
+        }
+        .chg-lang button:hover {
+            color: #828282;
+        }
     }
 }
 
 .start-info {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: flex-end;
     margin-bottom: 20px;
     padding-top: 40px;
     .start-info__name {
+        margin: 0 auto;
         font-size: 47px;
         line-height: 59px;
         letter-spacing: 0em;
         text-align: left;
-        width: 50px;
+        margin-bottom: 20px;
+        //width: 450px;
     }
     .start-info__name:hover {
         font-size: 400%;
     }
     .start-info__job {
-        max-width: 250px;
+        margin: 0 auto;
+        // max-width: 250px;
         font-size: 28px;
         line-height: 22px;
         letter-spacing: 0em;
         text-align: center;
-    }
-    .chg-lang {
-        writing-mode: tb-rl;
-        transform: rotate(180deg);
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0em;
-        text-align: left;
     }
 }
 
 .animation-font {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-}
-
-.animation-font:hover {
-    font-size: 34px;
 }
 
 .start-img {
@@ -305,6 +313,31 @@ li {
     .template__img {
         height: 270px;
     }
+    .start-info {
+        flex-direction: column;
+        .start-info__name {
+            margin: 0 auto;
+            width: max-content;
+            font-size: 30px;
+            line-height: 12px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .start-info__job {
+            margin: 0 auto;
+            font-size: 18px;
+        }
+        .chg-lang {
+            width: 45px;
+            //writing-mode: tb-rl;
+            //transform: rotate(-90deg);
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0em;
+            //text-align: left;
+            margin: 0 auto;
+        }
+    }
 }
 
 @media (max-width: 592px) {
@@ -327,12 +360,13 @@ li {
             font-size: 18px;
         }
         .chg-lang {
-            writing-mode: tb-rl;
-            transform: rotate(-90deg);
+            width: 45px;
+            //writing-mode: tb-rl;
+            //transform: rotate(-90deg);
             font-size: 16px;
             line-height: 20px;
             letter-spacing: 0em;
-            text-align: left;
+            //text-align: left;
             margin: 0 auto;
         }
     }
@@ -387,15 +421,6 @@ li {
         .start-info__job {
             margin: 0 auto;
             font-size: 10px;
-        }
-        .chg-lang {
-            writing-mode: tb-rl;
-            transform: rotate(-90deg);
-            font-size: 9px;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-            margin: 0 auto;
         }
     }
     .about {
@@ -453,6 +478,9 @@ li {
             a {
                 font-size: 20px;
                 margin-bottom: 10px;
+            }
+            .chg-lang {
+                margin: 0 auto;
             }
         }
     }

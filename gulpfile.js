@@ -69,7 +69,8 @@ function build() {
     return src(['app/css/style.min.css',
             'app/js/main.min.js',
             'app/scss/fonts/**/*',
-            'app/*.html'
+            'app/*.html',
+            'app/pages/**/*'
         ], { base: 'app' })
         .pipe(dest('dest'))
 }

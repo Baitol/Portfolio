@@ -19,7 +19,6 @@ function browsersync() {
 function scriptos() {
     return src([
             'node_modules/jquery/dist/jquery.js',
-            'app/js/pagemap-1.4.0.min.js',
             'app/js/main.js'
         ])
         .pipe(concat('main.min.js'))
@@ -70,8 +69,7 @@ function build() {
     return src(['app/css/style.min.css',
             'app/js/main.min.js',
             'app/scss/fonts/**/*',
-            'app/*.html',
-            'app/pages/**/*'
+            'app/*.html'
         ], { base: 'app' })
         .pipe(dest('dest'))
 }

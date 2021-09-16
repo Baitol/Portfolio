@@ -19,6 +19,7 @@ function browsersync() {
 function scriptos() {
     return src([
             'node_modules/jquery/dist/jquery.js',
+            'app/js/pagemap-1.4.0.min.js',
             'app/js/main.js'
         ])
         .pipe(concat('main.min.js'))

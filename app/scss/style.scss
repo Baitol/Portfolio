@@ -99,9 +99,6 @@ li {
         margin-bottom: 20px;
         //width: 450px;
     }
-    .start-info__name:hover {
-        font-size: 400%;
-    }
     .start-info__job {
         margin: 0 auto;
         // max-width: 250px;
@@ -110,15 +107,6 @@ li {
         letter-spacing: 0em;
         text-align: center;
     }
-}
-
-.animation-font {
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-}
-
-.animation-font:hover {
-    font-size: 200%;
 }
 
 .start-img {
@@ -314,6 +302,20 @@ li {
     }
 }
 
+@media(min-width: 897px) {
+    .animation-font {
+        -webkit-transition: all 0.4s;
+        transition: all 0.4s;
+    }
+    .animation-font:hover {
+        font-size: 200%;
+    }
+    .start-info {}
+    .start-info__name:hover {
+        font-size: 400%;
+    }
+}
+
 @media (max-width: 897px) {
     #map {
         display: none;
@@ -356,10 +358,29 @@ li {
     }
 }
 
-@media (max-width: 592px) {
+@media (max-width: 620px) {
     .header {
         position: static;
-        font-size: 12px;
+        padding-top: 10px;
+        .menu {
+            width: 90%;
+            max-width: 1080px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 0 20px;
+            width: 90%;
+            padding-bottom: 10px;
+            max-width: 1440px;
+            display: flex;
+            flex-direction: column;
+            a {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .chg-lang {
+                margin: 0 auto;
+            }
+        }
     }
     .start-info {
         flex-direction: column;
@@ -426,10 +447,6 @@ li {
 }
 
 @media (max-width: 410px) {
-    .header {
-        position: static;
-        font-size: 9px;
-    }
     .start-info {
         .start-info__name {
             font-size: 20px;
@@ -478,28 +495,6 @@ li {
 }
 
 @media (max-width: 280px) {
-    .header {
-        padding-top: 10px;
-        .menu {
-            width: 90%;
-            max-width: 1080px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 0 20px;
-            width: 90%;
-            padding-bottom: 10px;
-            max-width: 1440px;
-            display: flex;
-            flex-direction: column;
-            a {
-                font-size: 20px;
-                margin-bottom: 10px;
-            }
-            .chg-lang {
-                margin: 0 auto;
-            }
-        }
-    }
     .about {
         .tech {
             .tech-logo {

@@ -19,6 +19,7 @@ function browsersync() {
 function scriptos() {
     return src([
             'node_modules/jquery/dist/jquery.js',
+            'app/js/pagemap-1.4.0.min.js',
             'app/js/main.js'
         ])
         .pipe(concat('main.min.js'))
@@ -44,7 +45,9 @@ function styles() {
 }
 
 function images() {
-    return src('app/images/**/*')
+    return src(['app/images/**/*'
+            //'app/pages/**/images/*'
+        ])
         .pipe(imagemin([
             imagemin.gifsicle({ interlaced: true }),
             imagemin.mozjpeg({ quality: 75, progressive: true }),
@@ -69,7 +72,8 @@ function build() {
     return src(['app/css/style.min.css',
             'app/js/main.min.js',
             'app/scss/fonts/**/*',
-            'app/*.html'
+            'app/*.html',
+            'app/pages/**/*'
         ], { base: 'app' })
         .pipe(dest('dest'))
 }
